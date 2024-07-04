@@ -1,0 +1,39 @@
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  gap: 30px;
+}
+.sobre h1 {
+  font-size: 30px;
+  color: #800020;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.sobre img {
+  display: block;
+  width: 500px;
+  height: auto;
+  align-content: center;
+}
+
+.sobre-texto {
+  margin-bottom: 50px;
+}
+
+.sobre-texto p {
+  font-size: 15px;
+  max-width: 500px;
+}
+
+.sobre-texto p + p {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .sobre img {
+    width: 100%;
+  }
+}
