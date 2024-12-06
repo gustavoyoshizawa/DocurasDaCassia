@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="ops">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,9 +50,35 @@
             <li><a href="#">Como Encomendar</a></li>
             <li><a href="/contato.html">Contato</a></li>
           </ul>
+          <div class="carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
         </nav>
       </div>
+      <div class="carrinho">
+        <div class="cabecalho-carrinho">
+          <button class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h1>Meu Carrinho</h1>
+        </div>
+        <div class="cart"></div>
+        <div class="totalOrcamento">
+          <div class="total">
+            <p>Total</p>
+            <span>R$ 00.00</span>
+          </div>
+          <div class="contatoWpp">
+            <a
+              href="https://api.whatsapp.com/send?phone=5511983500312"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <div class="contato container-form">
         <section class="contato-dados" aria-label="Endereço">
@@ -84,7 +110,7 @@
               <input type="text" name="nome" id="nome" placeholder="Seu nome" />
             </div>
             <div>
-              <label for="Telefone">Telefone</label>
+              <label for="telefone">Telefone</label>
               <input
                 type="text"
                 name="telefone"
@@ -110,7 +136,7 @@
                 placeholder="O que você precisa?"
               ></textarea>
             </div>
-            <button class="botao">Enviar Mensagem</button>
+            <button type="submit" class="botao">Enviar Mensagem</button>
           </form>
         </section>
       </div>
