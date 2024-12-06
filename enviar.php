@@ -1,13 +1,12 @@
 <?php
-
-  $to = $_POST['nome'];
+  $nome = $_POST['nome'];
   $telefone = $_POST['telefone'];
   $email = $_POST['email'];
   $mensagem = $_POST['mensagem'];
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
-  //Corpo E-mail
+  // Corpo do e-mail
   $arquivo = "
     <html>
       <p><b>Nome: </b>$nome</p>
@@ -17,22 +16,20 @@
       <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
     </html>
   ";
-  
-  //Emails para quem será enviado o formulário
-  $destino = "gustavoyoshizawa89@gmail.com";
+
+  // Destinatário e assunto
+  $to = "gustavoyoshizawa89@gmail.com";
   $assunto = "Contato pelo Site";
 
-
-
-  /Este sempre deverá existir para garantir a exibição correta dos caracteres
+  // Headers
   $headers  = "MIME-Version: 1.0\n";
   $headers .= "Content-type: text/html; charset=iso-8859-1\n";
   $headers .= "From: $nome <$email>";
 
-  //Enviar
+  // Enviar e-mail
   mail($to, $assunto, $arquivo, $headers);
-  
-  echo "<meta http-equiv='refresh' content='10;URL=/contato.html'>";
 
-
+  // Redirecionar após envio
+  header('Location: /contato.html');
+  exit();
 ?>
