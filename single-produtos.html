@@ -78,51 +78,45 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="sobre container">
-        <h1 class="tittle-h1">Sobre Nós</h1>
-        <img src="/imagens/BOLO 1.jpg" alt="" />
-        <div class="sobre-texto">
-          <p>
-            Bem-vindo às Doçuras da Cássia, um pedacinho doce no coração da
-            confeitaria desde março de 2017! Nossa jornada começou com a paixão
-            pela arte da confeitaria, e desde então, temos dedicado cada dia a
-            criar delícias irresistíveis para adoçar os momentos especiais da
-            vida.
-          </p>
+    <main class="grid-perso" id="product-details">
+      <div class="img-product">
+        <img id="product-image" src="" alt="Imagem do Produto" />
+      </div>
+      <div class="info-product">
+        <h1 id="product-name">Nome do Produto</h1>
+        <p id="product-description">Descrição do Produto</p>
+        <span class="product-price">R$ 0.00</span>
 
-          <p>
-            Na Doçuras da Cássia, cada doce é uma obra-prima cuidadosamente
-            elaborada, refletindo o carinho e a atenção aos detalhes que
-            colocamos em cada receita. A qualidade dos nossos ingredientes,
-            combinada com a habilidade artesanal de nossa equipe, resulta em
-            doces que não apenas encantam o paladar, mas também elevam a
-            experiência gastronômica a um nível excepcional.
-          </p>
+        <select
+          title="filtroBolos"
+          name="filtroBolos"
+          id="filtroBolos"
+          class="ativo"
+        >
+          <option value="0">Selecione uma opção</option>
+          <option value="1">1 Kg</option>
+          <option value="2">2 Kg</option>
+          <option value="3">3 Kg</option>
+          <option value="4">4 Kg</option>
+        </select>
 
-          <p>
-            Nosso compromisso com a excelência permeia todos os aspectos de
-            nosso negócio. Desde os bolos e cupcakes mais elaborados até os
-            doces mais delicados, a Doçuras da Cássia busca constantemente
-            inovação e criatividade, proporcionando aos nossos clientes uma
-            variedade de opções que surpreendem e deliciam.
-          </p>
-
-          <p>
-            Ao longo dos anos, construímos uma comunidade de amantes de doces
-            que confiam em nós para tornar seus momentos especiais
-            verdadeiramente memoráveis. Seja um aniversário, casamento, ou
-            simplesmente um desejo por algo doce, estamos aqui para tornar esses
-            momentos mais saborosos e inesquecíveis.
-          </p>
-
-          <p>
-            Agradecemos por fazer parte da nossa história açucarada. Explore
-            nosso mundo de sabores e texturas na Doçuras da Cássia, onde a magia
-            da confeitaria ganha vida!
-          </p>
-        </div>
-      </section>
+        <select
+          title="filtroDoces"
+          name="filtroDoces"
+          id="filtroDoces"
+          class="ativo"
+        >
+          <option value="0">Selecione uma opção</option>
+          <option value="25">25 uni.</option>
+          <option value="50">50 uni.</option>
+          <option value="75">75 uni.</option>
+          <option value="100">100 uni.</option>
+        </select>
+        <button id="add-to-cart" class="botao">
+          Adicionar ao Carrinho
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
     </main>
     <footer class="footer">
       <div class="grid-footer container">

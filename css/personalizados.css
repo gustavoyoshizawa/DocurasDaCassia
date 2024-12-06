@@ -1,0 +1,68 @@
+.perso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.perso img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-personalizado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100ch;
+  padding: 100px 0px;
+}
+
+.info-personalizado {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.info-personalizado button {
+  border: none;
+  border-radius: 5px;
+  background-color: #800020;
+  color: white;
+  padding: 10px;
+  max-width: max-content;
+  cursor: pointer;
+  font-family: "Poppins";
+  transition: 0.2s;
+}
+
+.info-personalizado button:hover {
+  opacity: 0.8;
+}
+
+.info-personalizado i {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.img-personalizado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .grid-personalizado {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .perso img {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+}

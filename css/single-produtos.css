@@ -1,0 +1,274 @@
+#filtroBolos.ativo {
+  display: block;
+}
+#filtroBolos {
+  display: none;
+}
+#filtroDoces.ativo {
+  display: block;
+}
+#filtroDoces {
+  display: none;
+}
+
+.grid-perso {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  align-content: center;
+  padding: 20px 120px;
+  height: max-content;
+  gap: 40px;
+}
+
+.grid-perso img {
+  grid-column: 1;
+  display: block;
+  width: 70%;
+  height: auto;
+}
+.grid-perso p {
+  max-width: 45ch;
+}
+
+.img-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-product {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 0px 15px 0px;
+}
+
+.info-product select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00000073;
+  cursor: pointer;
+}
+
+.info-product button {
+  padding: 15px;
+  background: #800020;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.info-product button:hover {
+  background: #9e0128;
+  transition: 0.3s;
+}
+
+.carrito {
+  position: fixed;
+  right: 120px;
+  top: 120px;
+  background-color: #800020;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 100;
+}
+
+.carrito i {
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #800020;
+  --cor-secundaria: #ffffff;
+  --cor-bg: #f8f8f8;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translate3d(30px, 0px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+.carrinho {
+  width: 400px;
+  height: min-content;
+  max-height: 500px;
+  background-color: var(--cor-bg);
+  padding: 25px;
+  font-family: "Poppins";
+  position: fixed;
+  right: 0px;
+  top: 110px;
+  display: none;
+  overflow: auto;
+  z-index: 100;
+  animation: moveLeft 0.5s forwards;
+}
+
+.carrinho .cabecalho-carrinho {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 30px 0px;
+}
+
+.carrinho .cabecalho-carrinho button {
+  cursor: pointer;
+  padding: 3px 5px;
+  color: var(--cor-primaria);
+  background: #eeeeee;
+  border: 2px solid #e7e7e7;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.carrinho .cabecalho-carrinho h1 {
+  margin: auto;
+  text-align: center;
+  font: 500 1rem "Poppins";
+  color: var(--cor-primaria);
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+
+.carrinho-itens {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--cor-secundaria);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.imagem {
+  display: flex;
+  align-items: center;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+}
+
+.info .info-quantidade,
+.info-preco {
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-preco {
+  grid-column: 3;
+}
+
+.info-name {
+  font-size: 0.65rem;
+  text-align: center;
+  overflow: auto;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contador i {
+  cursor: pointer;
+  background-color: #800020;
+  padding: 5px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.contador i:hover {
+  background-color: #b1002c;
+}
+
+body.showCart .carrinho {
+  display: block;
+}
+
+.total {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #800020;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.totalOrcamento {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contatoWpp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #2cc149;
+}
+
+.contatoWpp a {
+  text-align: center;
+  transition: 0.3s;
+  padding: 20px;
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 5px;
+}
+.contatoWpp a:hover {
+  background-color: #02961f;
+}
+
+@media (max-width: 1200px) {
+  .carrito {
+    right: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .carrito {
+    padding: 14px;
+  }
+  .carrito i {
+    font-size: 14px;
+  }
+
+  .carrinho {
+    width: 100%;
+  }
+}

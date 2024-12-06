@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="ops">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
     />
     <link rel="icon" href="./imagens/logos/logo-pagina.svg" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Home | Doçuras da Cássia</title>
+    <title>Sobre Nós | Doçuras da Cássia</title>
   </head>
   <body>
     <header class="header-bg">
@@ -48,11 +48,37 @@
             <li><a href="/sobre.html">Sobre Nós</a></li>
             <li><a href="#">Cardápio</a></li>
             <li><a href="#">Como Encomendar</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/contato.html">Contato</a></li>
           </ul>
+          <div class="carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
         </nav>
       </div>
+      <div class="carrinho">
+        <div class="cabecalho-carrinho">
+          <button class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h1>Meu Carrinho</h1>
+        </div>
+        <div class="cart"></div>
+        <div class="totalOrcamento">
+          <div class="total">
+            <p>Total</p>
+            <span>R$ 00.00</span>
+          </div>
+          <div class="contatoWpp">
+            <a
+              href="https://api.whatsapp.com/send?phone=5511983500312"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <section class="slider">
         <div class="slider-content">
@@ -144,7 +170,9 @@
           <div class="produtos-itens">
             <div class="item">
               <div class="image-container">
-                <a href="/"><img src="./imagens/bolos.png" alt="" /></a>
+                <a href="/bolos.html"
+                  ><img src="./imagens/bolos.png" alt=""
+                /></a>
                 <div class="text-overlay">
                   <h1>Bolos</h1>
                 </div>
@@ -152,7 +180,9 @@
             </div>
             <div class="item">
               <div class="image-container">
-                <a href="/"><img src="./imagens/bolos-perso.png" alt="" /></a>
+                <a href="/personalizados.html"
+                  ><img src="./imagens/bolos-perso.png" alt=""
+                /></a>
                 <div class="text-overlay">
                   <h1>Personalizados</h1>
                 </div>
@@ -160,7 +190,9 @@
             </div>
             <div class="item">
               <div class="image-container">
-                <a href="/"> <img src="./imagens/docinhos.png" alt="" /></a>
+                <a href="/docinhos.html">
+                  <img src="./imagens/docinhos.png" alt=""
+                /></a>
                 <div class="text-overlay">
                   <h1>Docinhos</h1>
                 </div>
@@ -168,7 +200,9 @@
             </div>
             <div class="item">
               <div class="image-container">
-                <a href="/"><img src="./imagens/sobremesas.png" alt="" /></a>
+                <a href="/sobremesas.html"
+                  ><img src="./imagens/sobremesas.png" alt=""
+                /></a>
                 <div class="text-overlay">
                   <h1>Sobremesas</h1>
                 </div>
@@ -199,7 +233,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a href=""><img src="./imagens/sobremesas.png" /></a>
+              <a href="/sobremesas.html"
+                ><img src="./imagens/sobremesas.png"
+              /></a>
               <div class="text-overlay">
                 <h1>Sobremesas</h1>
               </div>
@@ -228,10 +264,12 @@
           </nav>
         </div>
         <div class="redes-footer">
-          <a href="https://api.whatsapp.com/send?phone=5511983500312"
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5511983500312"
             ><i class="fa-brands fa-whatsapp"></i
           ></a>
-          <a href="https://www.instagram.com/docurasdacassia/"
+          <a target="_blank" href="https://www.instagram.com/docurasdacassia/"
             ><i class="fa-brands fa-instagram"></i
           ></a>
           <a href="mailto:contato@docurasdacassia.com">
@@ -258,9 +296,6 @@
           depth: 100,
           modifier: 1,
           slideShadows: false,
-        },
-        pagination: {
-          // el: ".swiper-pagination",
         },
       });
     </script>

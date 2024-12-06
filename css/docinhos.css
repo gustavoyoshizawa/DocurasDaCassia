@@ -1,0 +1,33 @@
+.doces-bg {
+  font-family: "Poppins";
+  background: url(/imagens/docinhos2.png);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.doces-bg h1 {
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.doces-bg p {
+  color: #ffffff;
+  font-weight: 300;
+  max-width: 60ch;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .doces-bg {
+    background: url(/imagens/docinhos-mb.png);
+    background-position: center;
+    background-size: cover;
+  }
+}

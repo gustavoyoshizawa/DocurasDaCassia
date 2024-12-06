@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "nome": "Ninho com Nutella",
+    "descricao": "Bolo de massa branca com recheios de Nutella e de Leite Ninho",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 2,
+    "nome": "Ninho com Morango",
+    "descricao": "Bolo de massa branca com recheios de creme de leite Ninho e morangos frescos.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 3,
+    "nome": "Ninho com Abacaxi",
+    "descricao": "Bolo de massa branca com recheios de creme de leite Ninho e abacaxi em cubos.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 4,
+    "nome": "Beijinho",
+    "descricao": "Bolo de massa branca com recheio de creme de coco ralado.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 5,
+    "nome": "Beijinho com Abacaxi",
+    "descricao": "Bolo de massa branca com recheio de creme de coco ralado e abacaxi em cubos.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 6,
+    "nome": "Doce de Leite com Ameixa",
+    "descricao": "Bolo de massa branca com recheios de doce de leite e pedaçoes de ameixa.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 7,
+    "nome": "Doce de Leite com Ameixa",
+    "descricao": "Bolo de massa branca com recheios de doce de leite e pedaçoes de ameixa.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 8,
+    "nome": "Mousse Chocolate Branco",
+    "descricao": "Bolo de massa branca com recheio de mousse de chocolate branco.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 9,
+    "nome": "Mousse Limão",
+    "descricao": "Bolo de massa branca com recheio de mousse de limão.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 10,
+    "nome": "Paçoca",
+    "descricao": "Bolo de massa branca com recheio de creme de paçoca.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 11,
+    "nome": "Creme 4 Leites",
+    "descricao": "Bolo de massa branca com recheio cremoso de quatro leites no sabor Morango ou Pêssego.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 80.00"
+  },
+  {
+    "id": 12,
+    "nome": "Alpino",
+    "descricao": "Bolo de massa de chocolate com recheio trufado de Alpino.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 13,
+    "nome": "Prestígio",
+    "descricao": "Bolo de massa de chocolate com recheio de creme de coco ralado.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 14,
+    "nome": "Mousse Chocolate",
+    "descricao": "Bolo de massa de chocolate com recheio de mousse de chocolate.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 75.00"
+  },
+  {
+    "id": 15,
+    "nome": "Sensação",
+    "descricao": "Bolo de massa de chocolate com recheio de mousse de morango.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 16,
+    "nome": "Casadinho",
+    "descricao": "Bolo de massa de chocolate com recheios de brigadeiro branco e preto.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 17,
+    "nome": "Brigadeiro Oreo",
+    "descricao": "Bolo de massa de chocolate com recheio de brigadeiro e pedaços de Oreo.",
+    "type": "bolos",
+    "imagem": "/imagens/bolo.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 18,
+    "nome": "Brigadeiro",
+    "descricao": "Doce tradicional brasileiro feito com leite condensado, chocolate em pó e manteiga, enrolado e coberto com granulado de chocolate.",
+    "type": "doces",
+    "imagem": "/imagens/brigadeiro.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 19,
+    "nome": "Beijinho",
+    "descricao": "Doce à base de leite condensado e coco ralado, enrolado em bolinhas e finalizado com coco ralado.",
+    "type": "doces",
+    "imagem": "/imagens/beijinho.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 20,
+    "nome": "Ninho",
+    "descricao": "Doce cremoso feito com leite condensado e leite em pó, de textura macia e sabor suave, finalizado com uma leve camada de leite em pó.",
+    "type": "doces",
+    "imagem": "/imagens/ninho.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 21,
+    "nome": "Churros",
+    "descricao": "Doce cremoso feito apenas com doce de leite e um toque de canela, finalizado com açúcar e canela para trazer o sabor autêntico do churros tradicional.",
+    "type": "doces",
+    "imagem": "/imagens/churros.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 21,
+    "nome": "Cajuzinho",
+    "descricao": "Doce feito com amendoim, leite condensado e chocolate, modelado em forma de caju e finalizado com açúcar e um pedacinho de amendoim.",
+    "type": "doces",
+    "imagem": "/imagens/cajuzinho.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 22,
+    "nome": "Bicho de Pé",
+    "descricao": "Doce de textura lisa e cremosa, feito com leite condensado e gelatina de morango, enrolado e coberto com açúcar cristal.",
+    "type": "doces",
+    "imagem": "/imagens/bichodepe.png",
+    "preco": "R$ 1.00"
+  },
+  {
+    "id": 23,
+    "nome": "Torta de Limão",
+    "descricao": "Base crocante com recheio cremoso de limão e cobertura de merengue ou chantilly.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  },
+  {
+    "id": 24,
+    "nome": "Pavê de Nata",
+    "descricao": "Camadas de biscoitos intercaladas com creme de nata suave.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  },
+  {
+    "id": 25,
+    "nome": "Torta Holandesa",
+    "descricao": "Base de biscoito com recheio cremoso de nata e cobertura de chocolate.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  },
+  {
+    "id": 26,
+    "nome": "Merengue de Morango",
+    "descricao": "Camadas de merengue, chantilly e morangos frescos.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  },
+  {
+    "id": 27,
+    "nome": "Mousse de Limão",
+    "descricao": "Mousse leve e refrescante com sabor cítrico de limão.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  },
+  {
+    "id": 28,
+    "nome": "Mousse de Morango",
+    "descricao": "Mousse cremosa e suave com sabor doce e frutado de morango.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  },
+  {
+    "id": 29,
+    "nome": "Mousse de Maracujá",
+    "descricao": "Mousse aerado com sabor intenso e refrescante de maracujá.",
+    "type": "sobremesas",
+    "imagem": "/imagens/torta.png",
+    "preco": "R$ 55.00"
+  }
+]
