@@ -238,8 +238,12 @@ const alterarQuantidade = (nome, filtro, incremento) => {
 };
 
 // Eventos
-iconCart.addEventListener("click", ativarCarrinho);
-btnClose.addEventListener("click", fecharCarrinho);
+if (iconCart) {
+  iconCart.addEventListener("click", ativarCarrinho);
+}
+if (btnClose) {
+  btnClose.addEventListener("click", fecharCarrinho);
+}
 if (btnAddToCart) {
   btnAddToCart.addEventListener("click", addToCart);
 }
