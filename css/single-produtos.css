@@ -259,6 +259,22 @@ body.showCart .carrinho {
   .carrito {
     right: 40px;
   }
+  .grid-perso {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 800px) {
+  .grid-perso img {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .grid-perso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .carrito {
