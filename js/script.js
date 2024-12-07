@@ -38,83 +38,103 @@ function initSlider() {
 }
 initSlider();
 
-function loadProducts() {
+function carregarProdutos(callback) {
   fetch("/produtos.json")
     .then((response) => response.json())
     .then((produtos) => {
-      const containerElement = document.querySelector("#products-container");
-      const page = window.location.pathname.split("/").pop();
-      let productType;
-
-      if (page === "bolos.html") {
-        productType = "bolos";
-      } else if (page === "docinhos.html") {
-        productType = "doces";
-      } else if (page === "sobremesas.html") {
-        productType = "sobremesas";
-      }
-
-      produtos.forEach((produto) => {
-        if (produto.type === productType) {
-          const card = document.createElement("div");
-          card.classList.add("bolos-sabores");
-          const text = document.createElement("h1");
-          text.textContent = produto.nome;
-          const img = document.createElement("img");
-          img.src = produto.imagem;
-          img.alt = produto.nome;
-          const button = document.createElement("button");
-          button.innerText = "Ver Sobre";
-          button.addEventListener("click", () => {
-            window.location.href = `single-produtos.html?produto=${produto.id}`;
-          });
-
-          card.appendChild(text);
-          card.appendChild(img);
-          card.appendChild(button);
-          containerElement.appendChild(card);
-        }
-      });
-    });
+      callback(produtos);
+    })
+    .catch((error) => console.error("Erro ao carregar produtos:", error));
 }
-loadProducts();
+
+function loadProducts() {
+  carregarProdutos((produtos) => {
+    const containerElement = document.querySelector("#products-container");
+    if (!containerElement) {
+      console.warn("Elemento '#products-container' não encontrado!");
+      return;
+    }
+
+    const page = window.location.pathname.split("/").pop();
+    let productType;
+
+    if (page === "bolos.html") {
+      productType = "bolos";
+    } else if (page === "docinhos.html") {
+      productType = "doces";
+    } else if (page === "sobremesas.html") {
+      productType = "sobremesas";
+    }
+
+    produtos.forEach((produto) => {
+      if (produto.type === productType) {
+        const card = document.createElement("div");
+        card.classList.add("bolos-sabores");
+        const text = document.createElement("h1");
+        text.textContent = produto.nome;
+        const img = document.createElement("img");
+        img.src = produto.imagem;
+        img.alt = produto.nome;
+        const button = document.createElement("button");
+        button.innerText = "Ver Sobre";
+        button.addEventListener("click", () => {
+          window.location.href = `single-produtos.html?produto=${produto.id}`;
+        });
+
+        card.appendChild(text);
+        card.appendChild(img);
+        card.appendChild(button);
+        containerElement.appendChild(card);
+      }
+    });
+  });
+}
 
 function singleProdutosLoad() {
   const params = new URLSearchParams(window.location.search);
   const produtoId = params.get("produto");
 
-  fetch("/produtos.json")
-    .then((response) => response.json())
-    .then((produtos) => {
-      const produto = produtos.find((p) => p.id == produtoId);
-      if (produto) {
-        document.querySelector("#product-name").textContent = produto.nome;
-        document.querySelector("#product-image").src = produto.imagem;
-        document.querySelector("#product-description").textContent =
-          produto.descricao;
+  carregarProdutos((produtos) => {
+    const produto = produtos.find((p) => p.id == produtoId);
+    if (!produto) {
+      console.warn("Produto não encontrado!");
+      return;
+    }
 
-        const filtroDoces = document.querySelector("#filtroDoces");
-        const filtroBolos = document.querySelector("#filtroBolos");
+    const productName = document.querySelector("#product-name");
+    const productImage = document.querySelector("#product-image");
+    const productDescription = document.querySelector("#product-description");
+    const productPrice = document.querySelector(".product-price");
 
-        // Define o filtro correto e oculta o outro
-        const filtroAtivo =
-          produto.type === "bolos" ? filtroBolos : filtroDoces;
-        const filtroInativo =
-          produto.type === "bolos" ? filtroDoces : filtroBolos;
+    if (productName) productName.textContent = produto.nome;
+    if (productImage) productImage.src = produto.imagem;
+    if (productDescription) productDescription.textContent = produto.descricao;
 
-        if (produto.type === "sobremesas") {
-          filtroAtivo.classList.remove("ativo");
-          filtroInativo.classList.remove("ativo");
-          document.querySelector(".product-price").textContent = produto.preco;
-        }
+    const filtroDoces = document.querySelector("#filtroDoces");
+    const filtroBolos = document.querySelector("#filtroBolos");
 
-        filtroInativo.classList.remove("ativo");
+    const filtroAtivo = produto.type === "bolos" ? filtroBolos : filtroDoces;
+    const filtroInativo = produto.type === "bolos" ? filtroDoces : filtroBolos;
 
-        filtroAtivo.addEventListener("change", () =>
-          calcularPreco(produto, filtroAtivo)
-        );
-      }
-    });
+    if (produto.type === "sobremesas") {
+      filtroAtivo?.classList.remove("ativo");
+      filtroInativo?.classList.remove("ativo");
+      if (productPrice) productPrice.textContent = produto.preco;
+    }
+
+    filtroInativo?.classList.remove("ativo");
+    filtroAtivo?.addEventListener("change", () =>
+      calcularPreco(produto, filtroAtivo)
+    );
+  });
+}
+
+// Chamada das funções
+const page = window.location.pathname.split("/").pop();
+if (page === "single-produtos.html") {
+  singleProdutosLoad();
+} else {
+  loadProducts();
 }
 
 function calcularPreco(produto, filtro) {
