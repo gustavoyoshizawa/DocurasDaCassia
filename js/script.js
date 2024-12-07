@@ -254,23 +254,23 @@ carregarCarrinho();
 function totalCarrinho() {
   const totalCarrinho = document.querySelector(".total span");
 
-  // Se o carrinho estiver vazio, zera o total
-  if (carrinho.length === 0) {
-    totalCarrinho.innerText = "R$ 00.00";
-    return; // Sai da função, não precisa calcular mais nada
+  if (totalCarrinho) {
+    // Se o carrinho estiver vazio, zera o total
+    if (carrinho.length === 0) {
+      totalCarrinho.innerText = "R$ 00.00";
+      return; // Sai da função, não precisa calcular mais nada
+    }
+
+    // Calcula o total caso existam itens no carrinho
+    let total = 0;
+    carrinho.forEach((item) => {
+      let quantidade = item.quantidade;
+      let valorProdutos = +item.preco.replace("R$ ", "") * quantidade;
+
+      total += valorProdutos; // Soma o valor dos produtos
+    });
+
+    // Atualiza o total no HTML
+    totalCarrinho.innerText = `R$ ${total.toFixed(2)}`;
   }
-
-  // Calcula o total caso existam itens no carrinho
-  let total = 0;
-  carrinho.forEach((item) => {
-    let quantidade = item.quantidade;
-    let valorProdutos = +item.preco.replace("R$ ", "") * quantidade;
-
-    total += valorProdutos; // Soma o valor dos produtos
-  });
-
-  // Atualiza o total no HTML
-  totalCarrinho.innerText = `R$ ${total.toFixed(2)}`;
 }
-
-totalCarrinho();
