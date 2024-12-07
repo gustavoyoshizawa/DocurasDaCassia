@@ -39,7 +39,7 @@ function initSlider() {
 initSlider();
 
 function loadProducts() {
-  fetch("produtos.json")
+  fetch("/produtos.json")
     .then((response) => response.json())
     .then((produtos) => {
       const containerElement = document.querySelector("#products-container");
@@ -83,7 +83,7 @@ function singleProdutosLoad() {
   const params = new URLSearchParams(window.location.search);
   const produtoId = params.get("produto");
 
-  fetch("produtos.json")
+  fetch("/produtos.json")
     .then((response) => response.json())
     .then((produtos) => {
       const produto = produtos.find((p) => p.id == produtoId);
