@@ -38,6 +38,7 @@ function initSlider() {
 }
 initSlider();
 
+// Load Products
 function loadProducts() {
   fetch("/produtos.json")
     .then((response) => response.json())
@@ -79,6 +80,7 @@ function loadProducts() {
 }
 loadProducts();
 
+// Single Product Load
 function singleProdutosLoad() {
   const params = new URLSearchParams(window.location.search);
   const produtoId = params.get("produto");
@@ -96,7 +98,6 @@ function singleProdutosLoad() {
         const filtroDoces = document.querySelector("#filtroDoces");
         const filtroBolos = document.querySelector("#filtroBolos");
 
-        // Define o filtro correto e oculta o outro
         const filtroAtivo =
           produto.type === "bolos" ? filtroBolos : filtroDoces;
         const filtroInativo =
@@ -131,7 +132,7 @@ function calcularPreco(produto, filtro) {
 
 singleProdutosLoad();
 
-// Seleção de elementos
+// Cart Management
 const iconCart = document.querySelector(".carrito");
 const body = document.body;
 const btnClose = document.querySelector(".close");
@@ -143,10 +144,8 @@ const filtroDoces = document.querySelector("#filtroDoces");
 const filtroBolos = document.querySelector("#filtroBolos");
 const linkFoto = document.querySelector("#product-image");
 
-// Carrinho de compras
 let carrinho = [];
 
-// Salvar e carregar carrinho no localStorage
 const salvarCarrinho = () =>
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 const carregarCarrinho = () => {
@@ -157,11 +156,6 @@ const carregarCarrinho = () => {
   }
 };
 
-// Exibir e fechar carrinho
-const ativarCarrinho = () => body.classList.add("showCart");
-const fecharCarrinho = () => body.classList.remove("showCart");
-
-// Adicionar produto ao carrinho
 const addToCart = () => {
   const filtroSelecionado = filtroDoces?.classList.contains("ativo")
     ? `${filtroDoces.value} uni`
@@ -177,18 +171,29 @@ const addToCart = () => {
     quantidade: 1,
   };
 
-  const existente = carrinho.find(
-    (item) => item.nome === produto.nome && item.filtro === produto.filtro
-  );
+  // Verifica se o primeiro caractere do filtro é "0"
+  if (produto.filtro.charAt(0) !== "0") {
+    const existente = carrinho.find(
+      (item) => item.nome === produto.nome && item.filtro === produto.filtro
+    );
 
-  existente ? existente.quantidade++ : carrinho.push(produto);
+    if (existente) {
+      existente.quantidade++;
+    } else {
+      carrinho.push(produto);
+    }
 
-  renderCarrinho();
-  salvarCarrinho(); // Salva no localStorage
-  totalCarrinho();
+    renderCarrinho();
+    salvarCarrinho(); // Salva no localStorage
+    totalCarrinho();
+    ativarCarrinho();
+  } else {
+    alert(
+      "Por favor, selecione uma quantidade válida antes de adicionar ao carrinho."
+    );
+  }
 };
 
-// Renderizar carrinho na interface
 const renderCarrinho = () => {
   carrinhoItens.innerHTML = carrinho
     .map(
@@ -219,7 +224,6 @@ const renderCarrinho = () => {
     .join("");
 };
 
-// Alterar quantidade no carrinho
 const alterarQuantidade = (nome, filtro, incremento) => {
   const produto = carrinho.find(
     (item) => item.nome === nome && item.filtro === filtro
@@ -233,11 +237,13 @@ const alterarQuantidade = (nome, filtro, incremento) => {
   }
 
   renderCarrinho();
-  salvarCarrinho(); // Salva no localStorage
+  salvarCarrinho();
   totalCarrinho();
 };
 
-// Eventos
+const ativarCarrinho = () => body.classList.add("showCart");
+const fecharCarrinho = () => body.classList.remove("showCart");
+
 if (iconCart) {
   iconCart.addEventListener("click", ativarCarrinho);
 }
@@ -248,29 +254,25 @@ if (btnAddToCart) {
   btnAddToCart.addEventListener("click", addToCart);
 }
 
-// Carregar carrinho salvo ao iniciar
 carregarCarrinho();
 
 function totalCarrinho() {
   const totalCarrinho = document.querySelector(".total span");
 
   if (totalCarrinho) {
-    // Se o carrinho estiver vazio, zera o total
     if (carrinho.length === 0) {
       totalCarrinho.innerText = "R$ 00.00";
-      return; // Sai da função, não precisa calcular mais nada
+      return;
     }
 
-    // Calcula o total caso existam itens no carrinho
     let total = 0;
     carrinho.forEach((item) => {
       let quantidade = item.quantidade;
       let valorProdutos = +item.preco.replace("R$ ", "") * quantidade;
 
-      total += valorProdutos; // Soma o valor dos produtos
+      total += valorProdutos;
     });
 
-    // Atualiza o total no HTML
     totalCarrinho.innerText = `R$ ${total.toFixed(2)}`;
   }
 }

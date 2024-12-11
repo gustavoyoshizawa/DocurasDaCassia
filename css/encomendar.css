@@ -1,0 +1,41 @@
+.encomendar-container {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+.encomendar {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+}
+
+.encomendar-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.encomendas-nav li + li {
+  margin-top: 25px;
+}
+
+.encomendar-info p {
+  max-width: 60ch;
+}
+
+.encomendar-info {
+  text-align: center;
+}
+
+ol {
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+
+li::marker {
+  color: #800020;
+  font-weight: bold;
+}

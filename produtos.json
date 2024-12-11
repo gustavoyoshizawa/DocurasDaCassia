@@ -140,7 +140,7 @@
     "nome": "Brigadeiro",
     "descricao": "Doce tradicional brasileiro feito com leite condensado, chocolate em pó e manteiga, enrolado e coberto com granulado de chocolate.",
     "type": "doces",
-    "imagem": "/imagens/brigadeiro.png",
+    "imagem": "/imagens/Doces/brigadeiro.png",
     "preco": "R$ 1.00"
   },
   {
@@ -148,7 +148,7 @@
     "nome": "Beijinho",
     "descricao": "Doce à base de leite condensado e coco ralado, enrolado em bolinhas e finalizado com coco ralado.",
     "type": "doces",
-    "imagem": "/imagens/beijinho.png",
+    "imagem": "/imagens/Doces/beijinho.png",
     "preco": "R$ 1.00"
   },
   {
@@ -156,7 +156,7 @@
     "nome": "Ninho",
     "descricao": "Doce cremoso feito com leite condensado e leite em pó, de textura macia e sabor suave, finalizado com uma leve camada de leite em pó.",
     "type": "doces",
-    "imagem": "/imagens/ninho.png",
+    "imagem": "/imagens/Doces/ninho.png",
     "preco": "R$ 1.00"
   },
   {
@@ -164,7 +164,7 @@
     "nome": "Churros",
     "descricao": "Doce cremoso feito apenas com doce de leite e um toque de canela, finalizado com açúcar e canela para trazer o sabor autêntico do churros tradicional.",
     "type": "doces",
-    "imagem": "/imagens/churros.png",
+    "imagem": "/imagens/Doces/churros.png",
     "preco": "R$ 1.00"
   },
   {
@@ -172,7 +172,7 @@
     "nome": "Cajuzinho",
     "descricao": "Doce feito com amendoim, leite condensado e chocolate, modelado em forma de caju e finalizado com açúcar e um pedacinho de amendoim.",
     "type": "doces",
-    "imagem": "/imagens/cajuzinho.png",
+    "imagem": "/imagens/Doces/cajuzinho.png",
     "preco": "R$ 1.00"
   },
   {
@@ -180,7 +180,7 @@
     "nome": "Bicho de Pé",
     "descricao": "Doce de textura lisa e cremosa, feito com leite condensado e gelatina de morango, enrolado e coberto com açúcar cristal.",
     "type": "doces",
-    "imagem": "/imagens/bichodepe.png",
+    "imagem": "/imagens/Doces/bichodepe.png",
     "preco": "R$ 1.00"
   },
   {
