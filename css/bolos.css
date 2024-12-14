@@ -1,6 +1,6 @@
 .bolos-bg {
   font-family: "Poppins";
-  background: url(/imagens/bolos.jpg);
+  background: url(/imagens/bg-section.png);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@
   text-align: center;
   justify-content: space-between;
   position: relative;
-  background-color: #f0ecba;
+  background-color: #800020;
   gap: 30px;
   padding: 20px;
   border-radius: 10px;
@@ -73,7 +73,7 @@
 }
 
 .bolos-sabores h1 {
-  color: #800020;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -104,7 +104,7 @@
 
 @media (max-width: 600px) {
   .bolos-bg {
-    background: url(/imagens/bolos-mb.png);
+    background: url(/imagens/bg-section-mb.png);
     background-position: center;
     background-size: cover;
   }

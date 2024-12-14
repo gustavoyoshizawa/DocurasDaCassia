@@ -4,7 +4,7 @@
     "nome": "Ninho com Nutella",
     "descricao": "Bolo de massa branca com recheios de Nutella e de Leite Ninho",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/ninho-com-nutella.png",
     "preco": "R$ 75.00"
   },
   {
@@ -12,7 +12,7 @@
     "nome": "Ninho com Morango",
     "descricao": "Bolo de massa branca com recheios de creme de leite Ninho e morangos frescos.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/ninho-com-morango.png",
     "preco": "R$ 75.00"
   },
   {
@@ -20,7 +20,7 @@
     "nome": "Ninho com Abacaxi",
     "descricao": "Bolo de massa branca com recheios de creme de leite Ninho e abacaxi em cubos.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/ninho-com-abacaxi.png",
     "preco": "R$ 75.00"
   },
   {
@@ -28,7 +28,7 @@
     "nome": "Beijinho",
     "descricao": "Bolo de massa branca com recheio de creme de coco ralado.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/beijinho.png",
     "preco": "R$ 75.00"
   },
   {
@@ -36,7 +36,7 @@
     "nome": "Beijinho com Abacaxi",
     "descricao": "Bolo de massa branca com recheio de creme de coco ralado e abacaxi em cubos.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/beijinho-com-abacaxi.png",
     "preco": "R$ 75.00"
   },
   {
@@ -44,15 +44,15 @@
     "nome": "Doce de Leite com Ameixa",
     "descricao": "Bolo de massa branca com recheios de doce de leite e pedaçoes de ameixa.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/doce-de-leite-com-ameixa.png",
     "preco": "R$ 75.00"
   },
   {
     "id": 7,
-    "nome": "Doce de Leite com Ameixa",
-    "descricao": "Bolo de massa branca com recheios de doce de leite e pedaçoes de ameixa.",
+    "nome": "Mousse de Maracujá",
+    "descricao": "Bolo de massa branca com recheio de mousse de maracujá.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/mousse-de-maracuja.png",
     "preco": "R$ 75.00"
   },
   {
@@ -60,7 +60,7 @@
     "nome": "Mousse Chocolate Branco",
     "descricao": "Bolo de massa branca com recheio de mousse de chocolate branco.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/chocolate-branco.png",
     "preco": "R$ 75.00"
   },
   {
@@ -68,7 +68,7 @@
     "nome": "Mousse Limão",
     "descricao": "Bolo de massa branca com recheio de mousse de limão.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/mousse-de-limão.png",
     "preco": "R$ 75.00"
   },
   {
@@ -76,7 +76,7 @@
     "nome": "Paçoca",
     "descricao": "Bolo de massa branca com recheio de creme de paçoca.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/pacoca.png",
     "preco": "R$ 75.00"
   },
   {
@@ -84,7 +84,7 @@
     "nome": "Creme 4 Leites",
     "descricao": "Bolo de massa branca com recheio cremoso de quatro leites no sabor Morango ou Pêssego.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/creme-4-leites.png",
     "preco": "R$ 80.00"
   },
   {
@@ -92,7 +92,7 @@
     "nome": "Alpino",
     "descricao": "Bolo de massa de chocolate com recheio trufado de Alpino.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/alpino.png",
     "preco": "R$ 75.00"
   },
   {
@@ -100,7 +100,7 @@
     "nome": "Prestígio",
     "descricao": "Bolo de massa de chocolate com recheio de creme de coco ralado.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/prestigio.png",
     "preco": "R$ 75.00"
   },
   {
@@ -108,7 +108,7 @@
     "nome": "Mousse Chocolate",
     "descricao": "Bolo de massa de chocolate com recheio de mousse de chocolate.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/mousse-chocolate.png",
     "preco": "R$ 75.00"
   },
   {
@@ -116,7 +116,7 @@
     "nome": "Sensação",
     "descricao": "Bolo de massa de chocolate com recheio de mousse de morango.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/sensacao.png",
     "preco": "R$ 1.00"
   },
   {
@@ -124,7 +124,7 @@
     "nome": "Casadinho",
     "descricao": "Bolo de massa de chocolate com recheios de brigadeiro branco e preto.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/casadinho.png",
     "preco": "R$ 1.00"
   },
   {
@@ -132,7 +132,7 @@
     "nome": "Brigadeiro Oreo",
     "descricao": "Bolo de massa de chocolate com recheio de brigadeiro e pedaços de Oreo.",
     "type": "bolos",
-    "imagem": "/imagens/bolo.png",
+    "imagem": "/imagens/Bolos/oreo.png",
     "preco": "R$ 1.00"
   },
   {
@@ -188,7 +188,7 @@
     "nome": "Torta de Limão",
     "descricao": "Base crocante com recheio cremoso de limão e cobertura de merengue ou chantilly.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/torta-de-limão.png",
     "preco": "R$ 55.00"
   },
   {
@@ -196,7 +196,7 @@
     "nome": "Pavê de Nata",
     "descricao": "Camadas de biscoitos intercaladas com creme de nata suave.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/pave-de-nata.png",
     "preco": "R$ 55.00"
   },
   {
@@ -204,7 +204,7 @@
     "nome": "Torta Holandesa",
     "descricao": "Base de biscoito com recheio cremoso de nata e cobertura de chocolate.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/torta-holandesa.png",
     "preco": "R$ 55.00"
   },
   {
@@ -212,7 +212,7 @@
     "nome": "Merengue de Morango",
     "descricao": "Camadas de merengue, chantilly e morangos frescos.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/merengue.png",
     "preco": "R$ 55.00"
   },
   {
@@ -220,7 +220,7 @@
     "nome": "Mousse de Limão",
     "descricao": "Mousse leve e refrescante com sabor cítrico de limão.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/mousse-de-limao.png",
     "preco": "R$ 55.00"
   },
   {
@@ -228,7 +228,7 @@
     "nome": "Mousse de Morango",
     "descricao": "Mousse cremosa e suave com sabor doce e frutado de morango.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/mousse-de-morango.png",
     "preco": "R$ 55.00"
   },
   {
@@ -236,7 +236,7 @@
     "nome": "Mousse de Maracujá",
     "descricao": "Mousse aerado com sabor intenso e refrescante de maracujá.",
     "type": "sobremesas",
-    "imagem": "/imagens/torta.png",
+    "imagem": "/imagens/Sobremesas/mousse-de-maracuja.png",
     "preco": "R$ 55.00"
   }
 ]

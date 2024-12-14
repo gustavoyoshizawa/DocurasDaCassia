@@ -155,6 +155,7 @@ const carregarCarrinho = () => {
     renderCarrinho();
   }
 };
+carregarCarrinho();
 
 const addToCart = () => {
   const filtroSelecionado = filtroDoces?.classList.contains("ativo")
@@ -243,18 +244,23 @@ const alterarQuantidade = (nome, filtro, incremento) => {
 
 const ativarCarrinho = () => body.classList.add("showCart");
 const fecharCarrinho = () => body.classList.remove("showCart");
+const eventos = ["touchstart", "click"];
 
 if (iconCart) {
-  iconCart.addEventListener("click", ativarCarrinho);
+  eventos.forEach((evento) => {
+    iconCart.addEventListener(evento, ativarCarrinho);
+  });
 }
 if (btnClose) {
-  btnClose.addEventListener("click", fecharCarrinho);
+  eventos.forEach((evento) => {
+    btnClose.addEventListener(evento, fecharCarrinho);
+  });
 }
 if (btnAddToCart) {
-  btnAddToCart.addEventListener("click", addToCart);
+  eventos.forEach((evento) => {
+    btnAddToCart.addEventListener(evento, addToCart);
+  });
 }
-
-carregarCarrinho();
 
 function totalCarrinho() {
   const totalCarrinho = document.querySelector(".total span");

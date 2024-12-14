@@ -1,6 +1,6 @@
 .doces-bg {
   font-family: "Poppins";
-  background: url(/imagens/docinhos2.png);
+  background: url(/imagens/bg-section.png);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
 
 @media (max-width: 600px) {
   .doces-bg {
-    background: url(/imagens/docinhos-mb.png);
+    background: url(/imagens/bg-section-mb.png);
     background-position: center;
     background-size: cover;
   }
