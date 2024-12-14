@@ -155,7 +155,6 @@ const carregarCarrinho = () => {
     renderCarrinho();
   }
 };
-carregarCarrinho();
 
 const addToCart = () => {
   const filtroSelecionado = filtroDoces?.classList.contains("ativo")
@@ -199,27 +198,27 @@ const renderCarrinho = () => {
   carrinhoItens.innerHTML = carrinho
     .map(
       (produto) => `
-      <div class="carrinho-itens">
-        <div class="imagem">
-          <img src="${produto.imagem}" alt="${produto.nome}">
-        </div>
-        <div class="info">
-        <div class="info-name">
-          <h2>${produto.nome}</h2>
-        </div>
-        <div class="info-quantidade">
-          <p>${produto.filtro}</p>
-        </div>
-        <div class="info-preco">
-          <p>${produto.preco}</p>
-          </div>
-        </div>
-        <div class="contador">
-          <i class="fa-solid fa-minus" onclick="alterarQuantidade('${produto.nome}', '${produto.filtro}', -1)"></i>
-          <span>${produto.quantidade}</span>
-          <i class="fa-solid fa-plus" onclick="alterarQuantidade('${produto.nome}', '${produto.filtro}', 1)"></i>
-        </div>
-      </div>
+    <div class="carrinho-itens">
+    <div class="imagem">
+    <img src="${produto.imagem}" alt="${produto.nome}">
+    </div>
+    <div class="info">
+    <div class="info-name">
+    <h2>${produto.nome}</h2>
+    </div>
+    <div class="info-quantidade">
+    <p>${produto.filtro}</p>
+    </div>
+    <div class="info-preco">
+    <p>${produto.preco}</p>
+    </div>
+    </div>
+    <div class="contador">
+    <i class="fa-solid fa-minus" onclick="alterarQuantidade('${produto.nome}', '${produto.filtro}', -1)"></i>
+    <span>${produto.quantidade}</span>
+    <i class="fa-solid fa-plus" onclick="alterarQuantidade('${produto.nome}', '${produto.filtro}', 1)"></i>
+    </div>
+    </div>
     `
     )
     .join("");
@@ -261,6 +260,7 @@ if (btnAddToCart) {
     btnAddToCart.addEventListener(evento, addToCart);
   });
 }
+carregarCarrinho();
 
 function totalCarrinho() {
   const totalCarrinho = document.querySelector(".total span");
