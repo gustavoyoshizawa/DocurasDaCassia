@@ -260,7 +260,6 @@ if (btnAddToCart) {
     btnAddToCart.addEventListener(evento, addToCart);
   });
 }
-carregarCarrinho();
 
 function totalCarrinho() {
   const totalCarrinho = document.querySelector(".total span");
@@ -268,6 +267,9 @@ function totalCarrinho() {
   if (totalCarrinho) {
     if (carrinho.length === 0) {
       totalCarrinho.innerText = "R$ 00.00";
+
+      // Salva o valor total como zero no Local Storage
+      localStorage.setItem("valorTotalCarrinho", "0.00");
       return;
     }
 
@@ -280,5 +282,20 @@ function totalCarrinho() {
     });
 
     totalCarrinho.innerText = `R$ ${total.toFixed(2)}`;
+
+    // Salva o valor total no Local Storage
+    localStorage.setItem("valorTotalCarrinho", total.toFixed(2));
   }
 }
+
+// Recuperar o valor total salvo ao carregar a página
+window.addEventListener("DOMContentLoaded", () => {
+  const totalCarrinho = document.querySelector(".total span");
+  const valorSalvo = localStorage.getItem("valorTotalCarrinho");
+
+  if (totalCarrinho && valorSalvo) {
+    totalCarrinho.innerText = `R$ ${parseFloat(valorSalvo).toFixed(2)}`;
+  }
+});
+
+carregarCarrinho();

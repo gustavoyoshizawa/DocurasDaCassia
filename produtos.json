@@ -117,7 +117,7 @@
     "descricao": "Bolo de massa de chocolate com recheio de mousse de morango.",
     "type": "bolos",
     "imagem": "/imagens/Bolos/sensacao.png",
-    "preco": "R$ 1.00"
+    "preco": "R$ 75.00"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "descricao": "Bolo de massa de chocolate com recheios de brigadeiro branco e preto.",
     "type": "bolos",
     "imagem": "/imagens/Bolos/casadinho.png",
-    "preco": "R$ 1.00"
+    "preco": "R$ 75.00"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "descricao": "Bolo de massa de chocolate com recheio de brigadeiro e pedaços de Oreo.",
     "type": "bolos",
     "imagem": "/imagens/Bolos/oreo.png",
-    "preco": "R$ 1.00"
+    "preco": "R$ 75.00"
   },
   {
     "id": 18,
